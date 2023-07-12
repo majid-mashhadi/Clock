@@ -1,0 +1,36 @@
+.sec { 
+    border-radius:  100% 100% 0 0 ;
+    color:red;
+}
+.container { 
+    position: absolute;
+    display: flex;
+    // align-content: center;
+}
+.canvas {
+    position: absolute;
+}
+.digital { 
+    height: 30px;
+}
+.seconds { 
+    position: absolute;
+    z-index: 4;
+    transform-origin: bottom;
+    // display: none;
+}
+
+
+.minutes { 
+    position: absolute;
+    z-index: 3;
+    transform-origin: bottom;
+    // display: none;
+}
+
+.hours { 
+    position: absolute;
+    z-index: 2;
+    transform-origin: bottom;
+    display: none;
+}

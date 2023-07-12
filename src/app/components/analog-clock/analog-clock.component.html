@@ -1,0 +1,22 @@
+<div [style.top.px]="top" [style.left.px]="left" class="container">
+    <div class="clock">
+        <div class="face">
+            <div class="center"></div>
+            <div *ngFor="let h of hours" class="hour hour{{h}} ">
+                <div>{{h}}</div>
+            </div>
+            <div #sec class="sec-hand"></div>
+            <div #min class="min-hand"></div>
+            <div #hour class="hour-hand"></div>
+        </div>
+    </div>
+    <div class="digital">
+        <span>
+            {{date?.getHours()}}
+        </span>
+        <span style="margin-right: 0.5rem;margin-left: 0.5rem;">:</span>
+        <span>
+            {{date?.getMinutes()}}
+        </span>
+    </div>
+</div>

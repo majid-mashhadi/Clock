@@ -1,0 +1,14 @@
+<!-- <canvas #clock class="canvas" width="{{width}}" height="{{height}}" [style.left.px]="x" [style.top.px]="y">
+</canvas> -->
+<!-- height="{{height}}" -->
+<!-- width="{{width}}" -->
+<div #clock [style.opacity]="show ? '1': '0'" class="canvas" [style.width.px]="width" [style.height.px]="height"
+    [style.left.px]="x" [style.top.px]="y">
+    <img #face class="face" [style.width.px]="width" [style.height.px]="height"
+        src="../../../assets/images/clock/face.png">
+
+    <img #seconds class="seconds" [style.height.px]=" height * 0.28" src="../../../assets/images/clock/minutes.png">
+    <img #minutes class="minutes" [style.height.px]=" height * 0.3" src="../../../assets/images/clock/minutes.png">
+    <img #hours class="hours" [style.height.px]=" height * 0.15" src="../../../assets/images/clock/hours.png">
+    <div class="sec"></div>
+</div>
